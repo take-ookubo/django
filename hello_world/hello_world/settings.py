@@ -105,13 +105,16 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+# TIME_ZONE = 'UTC'
+TIME_ZONE = "Asia/Tokyo"
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+# USE_TZ をオンにすると WITHOUT TIMEZONE なカラムとの相性が悪くなるからTrueにしないこと
+USE_TZ = False
+# USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
